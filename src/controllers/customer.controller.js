@@ -47,7 +47,7 @@ const getAllCustomer = asyncHandler(async(req, res)=>{
     const getAllCustomer = await Customer.find()
 
     if(!getAllCustomer){
-        throw new ApiError(502, 'User not found')
+        throw new ApiError(502, 'User not found') 
     }
 
     return res
